@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>task_6</title>
+    </head>
+    <body>
+        <script>
+        let firstCost = parseInt(prompt(`Enter the cost of the first item`));
+        let firstQuantity = parseInt(prompt(`Enter the quantity of the first product`));
+        let secondCost = parseInt(prompt(`Enter the cost of the first item`));
+        let secondQuantity = parseInt(prompt(`Enter the quantity of the first product`));
+        let thirdCost = parseInt(prompt(`Enter the cost of the first item`));
+        let thirdQuantity = parseInt(prompt(`Enter the quantity of the first product`));
+        let sumFirstPrice = firstCost * firstQuantity;
+        let sumSecondPrice = firstCost * firstQuantity;
+        let sumThirdPrice = firstCost * firstQuantity;
+        let totalSum = sumFirstPrice + sumSecondPrice * sumThirdPrice;
+        document.write(`
+         <h2>"MOLLY"</h2>
+         <p>tel:+442 867 23 24</p>
+            <table>
+                <thead>
+                   <tr>
+                      <th>product</th>
+                      <th>price</th> 
+                      <th>quantity</th>
+                      <th>amount</th>
+                   </tr>
+                 </thead>
+                 <tbody>
+                    <tr>
+                        <td>RIO green peas 420ml</td>
+                        <td>${firstCost}</td>
+                        <td>${firstQuantity}</td>
+                        <td>${sumFirstPrice}</td>
+                    </tr>
+                     <tr>
+                        <td>Granola AXA 300g Berries and Honey Sugar Free</td>
+                        <td>${secondCost}</td>
+                        <td>${secondQuantity}</td>
+                        <td>${sumSecondPrice}</td>
+                    </tr>
+                     <tr>
+                        <td>Jaffa Tea 0.5l Peach Leaves Stevia Hol</td>
+                        <td>${thirdCost}</td>
+                        <td>${thirdQuantity}</td>
+                        <td>${sumThirdPrice}</td>
+                    </tr>
+                 </tbody>
+                 <tfoot>
+                    <tr>
+                        <td>Total:</td>
+                        <td>${totalSum}</td>
+                    </tr>
+                 </tfoot>
+            </table>                    
+        `)
+    </script>
+    </body>
+</html>

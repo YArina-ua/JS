@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>task_3</title>
+    </head>
+    <body>
+        <script>
+             let quantity = parseInt(prompt(`Enter the product quantity:`, 38));
+		     let units = parseFloat(prompt(`Enter the price of a product unit:`, 1243));
+		     const vat = 23;
+		     let sum = quantity * units;
+		     let vatValue = sum * vat / 100;
+		    document.write(`The amount of VAT (${vat}%) is: ${vatValue} UAN`);
+		    console.log(`The amount of VAT (${vat}%) is: ${vatValue} UAN`);
+        </script>
+    </body>
+</html>
