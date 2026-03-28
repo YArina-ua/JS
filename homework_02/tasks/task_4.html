@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>task_4</title>
+    </head>
+    <body>
+        <script>
+		       let length = parseFloat(prompt(`Enter the length in centimeters for further calculation:`, 1276));
+	    	   let meters = length / 100;
+		       let kilometers = length / 1000;
+		       document.write(`
+                   <table>
+				<tr>
+					<td>Length in centimeters:</td>
+					<td>${meters} cm.</td>
+				</tr>
+				<tr>
+					<td>Length in meters:</td>
+					<td> ${kilometers} km.</td>
+				</tr>
+                </table>
+		        `);
+	     </script>
+    </body>
+</html>

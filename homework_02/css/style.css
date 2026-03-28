@@ -1,0 +1,19 @@
+@import url("reset.css");
+@import url("fonts.css");
+.home {
+  font-family: "lato", sans-serif;
+  background: #4d4a4a;
+  color: #00ff88;
+  padding: 12px;
+  border-radius: 6px;
+  padding-bottom: 20px;
+}
+.home__sublist {
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+.home__subitem,
+.home__list-item {
+  padding-top: 10px;
+  padding-bottom: 15px;
+}

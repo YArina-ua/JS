@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>task_5</title>
+    </head>
+    <body>
+        <script>
+            let sec = parseInt(prompt(`enter the number of seconds until the end of the day`, 55));
+            let minutes = sec / 60;
+            let hours = minutes / 60;
+            document.write(`
+             <table>
+				<tr>
+					<td>Minutes passed:</td>
+					<td>${minutes} min.</td>
+				</tr>
+				<tr>
+					<td>Hours passed:</td>
+					<td>${hours} h.</td>
+				</tr>
+                </table>
+            `)
+        </script>
+    </body>
+</html>
