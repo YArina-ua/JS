@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>task_6</title>
+    </head>
+    <body>
+        <script>
+            const dayNumber = parseInt(prompt(`Enter the day of the week number (1 to 7):`, '1'));
+            let dayOfWeek;
+
+            switch (dayNumber) {
+                case 1:
+                   dayOfWeek = "Monday";
+                    break;
+                case 2:
+                   dayOfWeek = "Tuesday";
+                    break;
+                case 3:
+                    dayOfWeek = "Wednesday";
+                    break;
+                case 4:
+                    dayOfWeek = "Thursday";
+                    break;
+                case 5:
+                    dayOfWeek = "Friday";
+                    break;
+                case 6:
+                    dayOfWeek = "Saturday";
+                    break;
+                case 7:
+                    dayOfWeek = "Sunday";
+                    break;
+                default:
+                    dayOfWeek = "There is no such day! Enter a number from 1 to 7.";
+            }
+
+            document.write(`The number ${dayNumber} corresponds to the following day of the week: ${dayOfWeek}`);
+            
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>task_5</title>
+    </head>
+    <body>
+        <script>
+           const category = prompt('Enter a category (A, B or C):', 'B').toUpperCase();
+            let vehicle
+
+           
+            switch (category) {
+                case 'A':
+                    vehicle = "Motorbike";
+                    break;
+                case 'B':
+                    vehicle = "Passenger car";
+                    break;
+                case 'C':
+                    vehicle = "Trucks";
+                    break;
+                default:
+                    vehicle = "Unseen category";
+                     break;
+            }
+            document.write(vehicle)
+        </script>
+    </body>
+</html>

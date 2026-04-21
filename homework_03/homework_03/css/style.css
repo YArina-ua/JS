@@ -1,0 +1,39 @@
+@import url("reset.css");
+@import url("fonts.css");
+.home {
+  font-family: "lato", sans-serif;
+  background: #f9f7f7;
+  color: #87065e;
+  border-radius: 6px;
+  font-size: 20px;
+  padding: 30px;
+}
+.home__sublist {
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+.home__list-item {
+  padding-top: 10px;
+  padding-bottom: 25px;
+}
+.home__link {
+  padding-bottom: 25px;
+}
+span {
+  display: inline-block;
+  padding: 10px 10px;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 5px #2e7d32;
+  transition: all 0.1s ease;
+}
+span:hover {
+  background-color: #45a049;
+}
+span:active {
+  transform: translateY(3px);
+  box-shadow: 0 2px #2e7d32;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>task_1</title>
+	</head>
+	<body>
+		<style>
+			h3{
+				color: red;
+				font-size: 20px;
+			}
+		</style>
+		<script>
+			// Крок 0. Вводимо позначення:
+
+			// the name of the first child = firstChildName;
+            // the name of the second child = secondChildName;
+			// the number of candies for the first child = firstChildCandies;
+			// the number of candies for the first child = secondChildCandies;
+
+			// Крок 1. Введення величин:
+	
+            let firstChildName = prompt(`Enter the name of the first child`, "Emma");
+			let firstChildCandies = parseInt(prompt(`Enter the number of candies for the first child.`, "0"));
+		    let secondChildName = prompt(`Enter the name of the second child`, "Roman");
+			let secondChildCandies = parseInt(prompt(`Enter the number of candies for the second child.`, "0"));
+
+			// Крок 2. Розв'язання задачі:
+
+		    if (firstChildCandies > secondChildCandies)
+                document.write(`${firstChildName} has more candy than ${secondChildName}.`);
+            else if (firstChildCandies < secondChildCandies)
+                document.write(`${secondChildName} has more candy than${firstChildName}.`);
+            else
+                document.write(`${firstChildName} and ${secondChildName} have the same number of candies.`)
+
+                // Крок 3. Виведення результатів:
+
+				   document.write(`
+                <h3>Введені дані:</h3>
+                <ol>
+                    <li>The name of the first child: <b>${firstChildName}</b></li>
+                    <li>The number of candies for the first child: <b>${firstChildCandies}</b></li>
+                    <li>The name of the second child: <b>${secondChildName}</b></li>
+                    <li>The number of candies for the second child: <b>${secondChildCandies }</b></li>
+                </ol>
+            `)
+   </script>
+	</body>
+</html>

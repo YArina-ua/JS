@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>task_4</title>
+	</head>
+
+	<body>
+		<script>
+			// Крок 0. Вводимо позначення:
+
+			//the person's age is entered = userAge ;
+            
+
+			// Крок 1. Введення величин:
+			  const userAge = parseInt(prompt(`Enter your age:`, '18'));
+              
+			  // Крок 2. Розв'язання задачі:
+
+			  let yourResult
+			  switch(true){
+				case (userAge <3 || userAge >99): 
+					userStatus = "The value is incorrect! Please enter the age correctly.";
+					break;
+				case (userAge >=3 && userAge <= 6): 
+				    yourResult= "Child in kindergarten";
+					break;
+				case (userAge >=6 && userAge <= 18): 
+				    yourResult = "schoolboy";
+					break;
+                case (userAge >=18 && userAge <= 22): 
+				    yourResult = "student";
+					break;
+				case (userAge >=22 && userAge <= 65): 
+				    yourResult = "worker";
+					break;
+				default:
+					 yourResult = "pensioner";
+					 break;
+			  }
+			  document.write( yourResult)
+
+            
+            
+
+		</script>
+	</body>
+</html>

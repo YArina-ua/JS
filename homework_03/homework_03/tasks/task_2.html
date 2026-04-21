@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>task_2</title>
+    </head>
+    <body>
+        <style>
+			h3{
+				color: rgb(36, 63, 6);
+				font-size: 20px;
+			}
+		</style>
+		<script>
+			// Крок 0. Вводимо позначення:
+
+			// the price of the product = productPrice;
+            // amount your money = yourMoney;
+			// buy lottery = lotteryOfPrice ;
+			// 
+
+			// Крок 1. Введення величин:
+	
+                let productPrice = parseFloat(prompt(`Enter the item price, please!`, "100"))
+                let yourMoney = parseFloat(prompt(`Enter the amount of money, please!`, "130"))
+                const remainingOfMoney = yourMoney - productPrice;
+                const lotteryPrice = 4;
+			// Крок 2. Розв'язання задачі:
+
+              
+            if (yourMoney >= productPrice) {
+                document.write(`<h3>There is enough money! Your balance: ${remainingOfMoney} UAH</h3>`);
+                
+                if (remainingOfMoney >= lotteryPrice) {
+                    document.write(`
+                        Special offer: you have enough money left to buy a lottery ticket for: ${lotteryPrice} UAH!`);
+                } else {
+                    document.write(`Thank you for your purchase! Have a nice day!!`);
+                }
+            }
+            else
+                document.write(`
+                    Sorry, your money is not enough. The product costs ${productPrice} UAH. Come next time!
+                `)
+                // Крок 3. Виведення результатів:
+                document.write(`
+                 Entered data:
+                <ul>
+                    <li><b>The price of the product: </b> ${productPrice} UAH</li>
+                    <li><b>The amount of money the buyer has: </b> ${yourMoney} UAH</li>
+                </ul>
+            `)
+        </script>
+    </body>
+</html>
+
+</html>
